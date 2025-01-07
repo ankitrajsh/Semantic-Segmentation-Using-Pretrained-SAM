@@ -204,7 +204,7 @@ import monai
 optimizer = Adam(model.mask_decoder.parameters(), lr=1e-5, weight_decay=0)
 #Try DiceFocalLoss, FocalLoss, DiceCELoss
 seg_loss = monai.losses.DiceCELoss(sigmoid=True, squared_pred=True, reduction='mean')
-
+ 
 
 
 # training  start 
