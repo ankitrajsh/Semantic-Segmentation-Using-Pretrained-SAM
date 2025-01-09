@@ -1,5 +1,8 @@
 # train_model.py
-
+# train_model.py
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 from setup import dataset
 import numpy as np
 from torch.utils.data import Dataset, DataLoader
